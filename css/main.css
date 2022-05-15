@@ -86,7 +86,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
   }
 }
 
@@ -187,6 +190,15 @@ body {
   }
   .menu-block.is-open {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 48px 0 48px 40px;
+    background-color: var(--adress-hero-color);
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    text-align: left;
   }
 }
 
@@ -221,12 +233,22 @@ body {
 
 @media screen and (max-width: 767px) {
   .menu__button {
-    display: block;
-    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0;
+    margin-left: auto;
     border: none;
     background-color: transparent;
-    top: 0;
-    right: 0;
+  }
+  .menu__button .menu__icon-close {
+    display: none;
+  }
+  .menu__button .is-open .menu__icon-close {
+    display: block;
+  }
+  .menu__button .is-open .menu__icon {
+    display: none;
   }
   .menu__button:hover, .menu__button:focus {
     fill: var(--hover-color);

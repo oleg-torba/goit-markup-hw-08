@@ -1,0 +1,60 @@
+.footer-position {
+    display: flex;
+    align-items: baseline;
+}
+.social-link-footer {
+    margin-left: 70px;
+}
+.footer-icon {
+    display: flex;
+    margin-right: 93px;
+    
+}
+
+/* Заголовок приєднюйтесь */
+.social-link-footer__title {
+    display: inline-block;
+    color: var(--adress-hero-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* Іконки соц мереж футера*/
+
+.footer-icon__link {
+    display: flex;
+    fill: var(--adress-hero-color);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    list-style-type: none;
+    transition-property: background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+}
+
+
+
+.footer-icon__list {
+    list-style-type: none;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+

@@ -1,0 +1,27 @@
+.logo {
+    display: inline-block;
+    padding: 24px 0 25px 0;
+    margin-right: 93px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-align: center;
+
+}
+.logo {
+    @media screen and (min-width: 480px) {
+        padding: 16px 0 16px 15px;
+        text-align: left;
+        
+    }
+}
+.logo__web {
+    color: var(--second-logo-color);
+}
+
+.logo__studio {
+    color: var(--first-logo-color);
+}

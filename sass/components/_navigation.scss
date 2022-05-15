@@ -1,4 +1,8 @@
- 
+.menu {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
 
 .menu__list {
     
@@ -32,22 +36,15 @@
 
 .menu__button {
     display: none;
-}
-
-.menu__button {
     @media screen and (max-width: 767px) {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        right: 0;
-        top: 0;
+        
 
     }
 }
 
-.menu {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-}
+
+

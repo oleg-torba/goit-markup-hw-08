@@ -899,6 +899,116 @@ body {
   list-style-type: none;
 }
 
+.footer-form__title {
+  color: var(--adress-hero-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+  .form {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form__item {
+    margin-bottom: 20px;
+  }
+  .form__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__item {
+    margin-right: 12px;
+    list-style: none;
+    outline: none;
+  }
+  .form__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__item input[type=email] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+  min-width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+  line-height: 1.87;
+  background: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.form__item input[type=email]:focus {
+  border-color: var(--hover-color);
+}
+
+@media screen and (max-width: 767px) {
+  .form__item input[type=email] {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.form__button {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  color: var(--adress-hero-color);
+  background-color: var(--hover-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.form__icon {
+  margin-left: 10px;
+  fill: var(--adress-hero-color);
+}
+
 .footer-adress__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -934,7 +1044,7 @@ body {
 
 /* Заголовок приєднюйтесь */
 .footer {
-  padding: 60px 0;
+  padding: 60px 0px;
   background-color: var(--footer-bgc);
 }
 

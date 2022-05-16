@@ -15,6 +15,7 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         
+        
     }
 }
 
@@ -29,7 +30,9 @@
         margin-bottom: 32px;
         margin-left: 0;
     }
-    
+    @media screen and (max-width: 1200px){
+        margin-left:auto;
+    }
 }
 
 .contact__link {
@@ -51,10 +54,25 @@
         color: var(--hover-color);
     fill: var(--hover-color);
     }
-    
+    @media screen and (max-width:767px) {
+        display: block;
+    }
 }
-
+.menu-block__phone {
+    @media screen and (max-width:767px) {
+        font-size: 34px;
+        
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    }
+}
 
 .contact__icon {
     margin-right: 10px;
+
+    @media screen and (max-width:767px)
+    {
+       display: none; 
+    }
 }
+

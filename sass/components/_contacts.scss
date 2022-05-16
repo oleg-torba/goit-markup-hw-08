@@ -1,9 +1,20 @@
 .contact {
-    display: flex;
-    margin-left: auto; 
+    
     list-style-type: none;
     @media screen and (max-width: 767px) {
-        display: none;
+        display: inline-block;
+        
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px){
+        
+        flex-direction: column;
+        margin-left: auto;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
     }
 }
 
@@ -13,6 +24,10 @@
 
     &:last-child {
         margin-right: 0;
+    }
+    @media screen and (max-width: 767px){
+        margin-bottom: 32px;
+        margin-left: 0;
     }
     
 }

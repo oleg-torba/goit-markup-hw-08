@@ -2,7 +2,8 @@
     
     list-style-type: none;
     @media screen and (max-width: 767px) {
-        display: inline-block;
+        display: block;
+        margin-bottom: auto;
         
     }
 
@@ -61,7 +62,9 @@
         display: block;
         &:first-child {
             margin-bottom: 32px;
-        }}
+        }
+        
+    }
         
         
     @media screen and (min-width: 1024px){
@@ -82,9 +85,9 @@
 
     
 
-.contact__link.menu-block__phone {
+.contact__link .menu-block__phone {
     @media screen and (max-width:767px) {
-        margin-bottom: 64px;
+        
         font-size: 34px;
         line-height: 40px;
         letter-spacing: 0.02em;

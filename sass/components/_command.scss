@@ -2,8 +2,8 @@
     display: flex;
     list-style-type: none;
 
-    @media screen and (min-width: 480px) {
-        display: inline-block;
+    @media screen and (max-width:767px) {
+        display: none;
        
     }
     

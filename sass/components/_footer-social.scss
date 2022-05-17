@@ -6,16 +6,16 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         align-items: baseline;
     }
 }
 .social-link-footer {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 60px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
         margin-left: 70px;
     }
 }
@@ -23,8 +23,10 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
         margin-right: 93px;
+        display: flex;
+    justify-content: center;
     }
 }
 
@@ -69,6 +71,9 @@
     &:focus {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
+}
+@media screen and (max-width:767px) {
+    
 }
 }
 

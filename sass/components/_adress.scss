@@ -1,7 +1,9 @@
 .footer-adress {
     display: inline-block;
+    margin: 0;
+    padding: 0;
+    
 }
-
 
 .adress {
     font-style: normal;
@@ -26,25 +28,17 @@
 
 
 .adress__link {
+    margin-bottom: 9px;
     list-style: none;
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 8px;
-        &:last-child {
-            margin-bottom: 0;
-    }
-}
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 9px;
-
-        &:last-child {
+    &:last-child {
         margin-bottom: 0;
-    
     }
-}
+    
 }
 
-// /* Тел і пошта */
+
+/* Тел і пошта */
 .adress__contacts {
     display: block;
     color: var(--footer-contacts-color);
@@ -61,10 +55,6 @@
 }
 .adress__nav {
     list-style-type: none;
-
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 60px;
-    }
 } 
 
 

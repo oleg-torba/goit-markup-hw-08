@@ -1,56 +1,29 @@
 .footer-position {
-    
-    @media screen and (max-width: 767px) {
-        
-        display: inline-block;
-        text-align: center;
-    }
-
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        align-items: baseline;
-    }
+    display: flex;
+    align-items: baseline;
 }
 .social-link-footer {
-    @media screen and (max-width:767px) {
-        margin-bottom: 60px;
-    }
-    @media screen and (min-width: 1024px) {
-        margin-left: 70px;
-    }
+    margin-left: 70px;
 }
 .footer-icon {
     display: flex;
-    justify-content: center;
-
-    @media screen and (min-width: 1024px) {
-        margin-right: 93px;
-        display: flex;
-    justify-content: center;
-    }
+    margin-right: 93px;
+    
 }
 
-// Заголовок приєднюйтесь
- .social-link-footer__title {
-     display: inline-block;
-     color: var(--adress-hero-color);
-     margin-bottom: 20px;
-     font-weight: 700;
+/* Заголовок приєднюйтесь */
+.social-link-footer__title {
+    display: inline-block;
+    color: var(--adress-hero-color);
+    margin-bottom: 20px;
+    font-weight: 700;
     font-size: 14px;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
- }
-
-// /* Іконки соц мереж футера*/
-.footer-icon__list {
-    list-style-type: none;
-    margin-right: 10px;
-
-    &:last-child {
-        margin-right: 0;
-    }
 }
+
+/* Іконки соц мереж футера*/
 
 .footer-icon__link {
     display: flex;
@@ -72,12 +45,16 @@
     background-color: var(--hover-color);
     border-color: var(--hover-color);
 }
-@media screen and (max-width:767px) {
-    
-}
 }
 
 
 
+.footer-icon__list {
+    list-style-type: none;
+    margin-right: 10px;
 
+    &:last-child {
+        margin-right: 0;
+    }
+}
 

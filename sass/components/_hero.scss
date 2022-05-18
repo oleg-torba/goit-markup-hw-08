@@ -1,17 +1,38 @@
 .hero {
-    background: url(../images/overlay.jpg);
+    background: url(./../../images/overlay.jpg);
     background-color: rgba(47, 48, 58, 0.4);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1600px;
-    min-height: 600px;
+    // max-width: 1600px;
+    // min-height: 600px;
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
     text-align: center;
-}
+
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    } 
+
+    // @media screen and (min-width: 480px) {
+    //     background: url(./../../images/hero1-5.jpg);
+        
+    // }
+
+    // @include retina-display {
+    //     background: url(./../../images/hero@2x.jpg);
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-color: rgba(47, 48, 58, 0.4);
+    //     background-blend-mode: overlay;
+    //     text-align: center;
+    // }
+    
+        
+    }
 
 .hero__title {
     max-width: 696px;

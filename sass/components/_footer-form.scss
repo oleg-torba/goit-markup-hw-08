@@ -15,8 +15,9 @@
 .form {
     @media screen and (max-width:767px) {
         display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
+    align-items: center;
     }
     
 }
@@ -40,8 +41,11 @@
 
 .form__item input[type=email] {
     display: flex;
+    flex: 100%;
+    // display: block;
+    // width: 100%;
     color: rgba(255, 255, 255, 0.6);
-    min-width: 358px;
+    
     height: 50px;
     padding: 15px 16px;
     color: var(--secondary-color);

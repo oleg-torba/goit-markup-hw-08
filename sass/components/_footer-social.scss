@@ -1,21 +1,38 @@
 .footer-position {
-    display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	justify-content: center;
+    display: block;
+	text-align: center;
 
-	@media screen and (min-width:1200px) {
+	// @media screen and (min-width:1200px) {
         
-    justify-content: left;
-    } 
+    // justify-content: left;
+    // } 
 		
 }
 .social-link-footer {
-    margin-left: 70px;
+    text-align: center;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+    }
+    
+    
+    
 }
 .footer-icon {
     display: flex;
-    margin-right: 93px;
+    
+
+    @media screen and (max-width:767px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
     
 }
 
@@ -29,6 +46,7 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* Іконки соц мереж футера*/

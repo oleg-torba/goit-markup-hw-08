@@ -28,11 +28,17 @@
 
 
 .adress__link {
-    margin-bottom: 9px;
-    list-style: none;
+    @media screen and (max-width:1199px) {
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 60px;
+        }
 
-    &:last-child {
-        margin-bottom: 0;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     
 }
@@ -51,6 +57,9 @@
     &:hover,
     &:focus {
         color: var(--hover-color);
+    }
+
+    
     }
 }
 .adress__nav {

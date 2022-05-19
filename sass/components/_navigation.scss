@@ -85,21 +85,23 @@
 .mobile-menu {
     @media screen and (max-width:767px) {
         display: none;
-   
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 48px 40px;
-            // background-color: var(--adress-hero-color);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        
     // transform: translateX(200vw);
     // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+            
     }
     &.is-open {
         display: flex;
         flex-direction: column;
+        position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            padding: 48px 40px;
+            background-color: var(--adress-hero-color);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        
     }
 }
 // .mobile-menu .is-open {

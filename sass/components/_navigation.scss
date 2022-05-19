@@ -81,7 +81,13 @@
 }
 
 .mobile-menu {
-        display: none;
+        // display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
         position: fixed;
 	    top: 0;
 	    right: 0;
@@ -90,15 +96,20 @@
         padding: 48px 40px;
         background-color: var(--adress-hero-color);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-        transform: translateX(200vw);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+        // transform: translateX(200vw);
+        // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
     
-        .is-open {
-            display: flex;
-        flex-direction: column;
-	    justify-content: space-between;
-        
-    }
+        @media screen and (max-width:768px){
+            &.is-open {
+                
+            opacity: 1;  
+            visibility: visible;
+            pointer-events: auto;
+            
+        }
+        }
+
+    
 }
 
 .mobile-menu__nav {
@@ -198,14 +209,23 @@
 }
 
 .mobile-menu__button {
+        // display: inline-flex;
+        // position: absolute;
+        // top: 10px;
+        // right: 15px;
+        // margin: 0;
+        // padding: 0;
+        // border: 0;
+        // background-color: transparent;
+        
         display: inline-flex;
-        position: absolute;
-        top: 10px;
-       right: 15px;
         margin: 0;
         padding: 0;
-        border: 0;
+        border: none;
         background-color: transparent;
+        position: absolute;
+        top: 15px;
+        right: 10px;
       
         & .mobile-menu__icon-close {
           display: none;

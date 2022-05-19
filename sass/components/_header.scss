@@ -1,17 +1,19 @@
-// .header {
-//     border-bottom: 1px solid var(--header-border-color);
-// }
-
-    
 .header {
     position: relative;
-	// z-index: 1;
-	top: 0;
-	left: 0;
-	right: 0;
-	// height: 60px;
-	border-bottom: 1px solid var(--header-border-color);
-	box-sizing: border-box;
+    border-bottom: 1px solid var(--header-border-color);
+    box-sizing: border-box;
     background-color: var(--adress-hero-color);
-
 }
+
+    
+// .header {
+    
+// 	// z-index: 1;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	// height: 60px;
+// 	border-bottom: 1px solid var(--header-border-color);
+	
+
+// }

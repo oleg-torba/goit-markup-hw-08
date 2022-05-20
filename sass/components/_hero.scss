@@ -1,53 +1,81 @@
 .hero {
-    background: url(./../../images/overlay.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    // max-width: 1600px;
-    // min-height: 600px;
-    margin: 0 auto;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 118px;
+	padding: 118px 60px;
+	max-width: 1600px;
+	background: url(./../../images/heroimg@1x.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(47, 48, 58, 0.4);
+	background-blend-mode: overlay;
+	text-align: center;
 
-    @media screen and (min-width:1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    } 
 
-    // @media screen and (min-width: 480px) {
-    //     background: url(./../../images/hero1-5.jpg);
+    @media screen and (min-width:480px) and (max-width:767px) {
         
-    // }
+     
+		background: url(./../../images/hero@1-5.jpg);
+		background-size: cover;
+		background-position: center;
+		background-color: rgba(47, 48, 58, 0.4);
+		background-blend-mode: overlay;
+		text-align: center;
+	}
 
-    // @include retina-display {
-    //     background: url(./../../images/hero@2x.jpg);
-    //     background-size: cover;
-    //     background-position: center;
-    //     background-color: rgba(47, 48, 58, 0.4);
-    //     background-blend-mode: overlay;
-    //     text-align: center;
-    // }
-    
-        
+    @media screen and (min-width:768px) {
+        background: url(./../../images/heroimg@2x.jpg);
+    }
+	@media screen and (min-width:1200px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url(./../../images/heroimg@3x.jpg);
+        padding: 200px 0;
+        background-size: cover;
+		background-position: center;
+		background-color: rgba(47, 48, 58, 0.4);
+		background-blend-mode: overlay;
+		text-align: center;
     }
 
+	
+
+
+}
+
 .hero__title {
-    max-width: 696px;
-    margin: 0 auto;
-    text-transform: uppercase;
     color: var(--adress-hero-color);
-    font-weight: 900;
+    
+//     font-weight: 900;
+//     color: var(--adress-hero-color);
+//     font-size: 26px;
+//     line-height: 1.62;
+    
+// text-align: center;
+// letter-spacing: 0.06em;
+// text-transform: uppercase;
+
+@media screen and (min-width:1200px) {
+    max-width: 696px;
+   
+    
+    
+   
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
+    
+}
+    
 }
 
 /* hero-button */
 .hero__button {
     display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    letter-spacing: 0.06em;
+    
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 10px 32px;
@@ -56,9 +84,7 @@
     color: var(--adress-hero-color);
     background-color: var(--hover-color);
     font-family: var(--button-font-family);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,

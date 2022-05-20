@@ -3,10 +3,13 @@
     border-bottom: 1px solid var(--header-border-color);
     box-sizing: border-box;
     background-color: var(--adress-hero-color);
+    max-width: 1600px;
 
     @media screen and (max-width:767px) {
         position: relative;
     }
+
+   
 }
 
     

@@ -28,15 +28,16 @@
 
 
 .adress__link {
+    
     @media screen and (max-width:1199px) {
         margin-bottom: 9px;
-        &:last-child {
+        &:last-child{
             margin-bottom: 60px;
         }
 
     @media screen and (min-width:1200px) {
         margin-bottom: 6px;
-        &:last-child {
+        &:first-child {
             margin-bottom: 0;
         }
     }

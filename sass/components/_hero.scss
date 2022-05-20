@@ -44,15 +44,14 @@
 
 .hero__title {
     color: var(--adress-hero-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     
-//     font-weight: 900;
-//     color: var(--adress-hero-color);
-//     font-size: 26px;
-//     line-height: 1.62;
     
-// text-align: center;
-// letter-spacing: 0.06em;
-// text-transform: uppercase;
 
 @media screen and (min-width:1200px) {
     max-width: 696px;

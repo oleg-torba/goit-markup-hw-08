@@ -1,16 +1,36 @@
 .client {
     display: flex;
+    @media screen and (max-width:767px) {
+        flex-wrap: wrap;
+    }
   
 }
 
 .client__item {
     list-style-type: none;
     margin-right: 30px;
-}
+    
+    @media screen and (max-width:767px) {
+        
+        margin-bottom: 30px;
+       
 
-.client__item:last-child {
-    margin-right: 0px;
-}
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0px;
+        }
+    
+        
+    @media screen and (min-width:1200px) {
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}}
+       
 
 
 .client__link {
@@ -18,7 +38,7 @@
     display: flex;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     box-sizing: border-box;
     align-items: center;

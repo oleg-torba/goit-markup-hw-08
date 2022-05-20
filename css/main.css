@@ -175,10 +175,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .contact__item:first-child {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
   .contact__item:last-child {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
   }
 }
 
@@ -391,6 +391,12 @@ body {
   }
 }
 
+.menu__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .menu__social {
     display: none;
@@ -402,7 +408,8 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  margin-right: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
   list-style: none;
   font-weight: 500;
   font-size: 18px;
@@ -412,20 +419,21 @@ body {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.menu__social-list:last-child {
-  margin-right: 0;
+.menu__social-list:first-child {
+  margin-left: 0;
 }
 
 .menu__social-link {
   display: block;
   color: var(--hover-color);
+  text-decoration: none;
 }
 
 .mobile-menu__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 10px;
   -webkit-box-align: center;
@@ -1055,6 +1063,9 @@ body {
 
 @media screen and (max-width: 767px) {
   .client__item {
+    -webkit-box-flex: calc(50% - 30px);
+        -ms-flex: calc(50% - 30px);
+            flex: calc(50% - 30px);
     margin-bottom: 30px;
   }
   .client__item:nth-child(2n) {
@@ -1065,20 +1076,20 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .client__item:last-child {
     margin-right: 0;
   }
 }
 
 .client__link {
-  fill: var(--clients-icon-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  fill: var(--clients-icon-color);
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  height: 92px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-align: center;
@@ -1098,6 +1109,12 @@ body {
 .client__link:hover, .client__link:focus {
   fill: var(--hover-color);
   border-color: var(--hover-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
 }
 
 .footer-adress {

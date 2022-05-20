@@ -32,12 +32,14 @@
     @media screen and (max-width:767px) {
         &:first-child {
             
+            margin-bottom: 64px;}
+            &:last-child {
             margin-bottom: 32px;
+        
             
         }
-        &:last-child {
-            margin-bottom: 64px;
-        }}
+    }
+         
     @media screen and (min-width:768px) and (max-width:1199px){
         margin-bottom: 10px;
         &:last-child {

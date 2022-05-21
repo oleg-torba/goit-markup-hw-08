@@ -1,16 +1,32 @@
 .portfolio-buttons {
-    justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+    
+    
+    @media screen and (min-width:1200px) {
+        justify-content: center;
+    
     margin-bottom: 50px;
+    }
 }
 
 .portfolio-buttons__list {
-    margin-right: 8px;
+
+    // margin-right: 6px;
+    // margin-bottom: 15px;
     list-style-type: none;
+   
+    @media screen and (min-width:1200px){
+        margin-right: 8px;
+       
+    
 
     &:last-child {
         margin-right: 0;
 }
+    }
 }
 
 .portfolio-buttons__filter {

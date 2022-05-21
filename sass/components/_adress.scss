@@ -2,6 +2,15 @@
     display: inline-block;
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 50%;
+        
+    }
     
 }
 
@@ -9,6 +18,11 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+        
 }
 
 

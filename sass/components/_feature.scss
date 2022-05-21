@@ -1,12 +1,12 @@
 .feature {
+
+    display: none;
     padding-top: 0px;
-
-    @media screen and (max-width:767px){
-        display: none;
-    }
-        
-    }
-
+    // display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
 
 .feature-images {
@@ -20,6 +20,7 @@
 .feature-images__list {
     position: relative;
     margin-right: 30px;
+    width: 370px;
 
     &:last-child {
         margin-right: 0;
@@ -44,7 +45,7 @@
 
 .feature-images__img {
     display: block;
-    max-width: 100%;
+    width: 370px;
     height: auto;
     
 }

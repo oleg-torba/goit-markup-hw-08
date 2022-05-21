@@ -1,7 +1,13 @@
-.contact {
+// .contact {
+//     margin-left: auto;
+// }
+
+.contact__block {
     display: flex;
+    margin-left: auto;
     
     list-style-type: none;
+   
     
     @media screen and (max-width:767px) {
         flex-direction: column-reverse;
@@ -10,8 +16,9 @@
 	@media screen and (min-width:768px) and (max-width:1199px){
 		
 		flex-wrap: wrap;
-		// width: min-content;
-        // margin-left: auto;
+        margin-left: auto;
+		width: min-content;
+        margin-left: auto;
     }
 
     @media screen and (min-width:1200px){

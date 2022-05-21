@@ -1,16 +1,24 @@
 .modal {
     position: absolute;
+    padding: 40px;
     top: 50%;
     left: 50%;
-    padding: 40px;
+    min-width: 320px;
+    max-width: 528px;
+    min-height: 320px;
+    max-height: 609px;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
-    max-width: 100%;
-    max-height: 100%;
     background-color: var(--adress-hero-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    z-index: 3;
+    @media screen and (min-width:1200px) {
+       
+    
+    
+   
+    
+    }
 }
 
 .modal-submit {
@@ -67,12 +75,18 @@
 
 .modal__title {
     display: block;
-    margin-bottom: 12px;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
-    min-width: 100%;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    min-width: 100%;
+    
+    @media screen and (min-width:1200px){
+        font-size: 20px;
+        line-height: 1.15;
+    }
 }
 
 .modal-form {
@@ -105,7 +119,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
 
-    &focus + .modal-icons {
+    &:focus + .modal-form__icons {
         fill: var(--hover-color);
         border-color: var(--hover-color);
     
@@ -117,9 +131,7 @@
 
 
 
-// .modal-form__input:focus {
-//     border-color: var(--hover-color);
-// }
+
 .modal-form__icons {
     display: block;
     position: absolute;
@@ -135,7 +147,7 @@
 .modal-comment {
     display: flex;
     flex-direction: column;
-    height: 138px;
+    height: 120px;
     font-size: 12px;
     line-height: 1.17;
     margin-bottom: 20px;
@@ -153,6 +165,7 @@
 .modal-comment__textarea {
     color: var(--secondary-color);
     padding: 12px 16px;
+    min-width:290px;
     height: 448px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;

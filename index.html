@@ -33,30 +33,34 @@
                     </button>
                     
             <div class="mobile-menu" id="mobile-menu" data-menu>
-                <nav class="mobile-menu__nav">
-                    <ul class="menu">
-                        <li class="menu__list"><a class="menu__link menu__link--active" href="./index.html">Студия</a></li>
-                        <li class="menu__list"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="menu__list"><a class="menu__link" href="">Контакты</a></li>
+                <div class="mobile-menu__block">
+                    <nav class="mobile-menu__nav">
+                        <ul class="menu">
+                            <li class="menu__list"><a class="menu__link menu__link--active" href="./index.html">Студия</a></li>
+                            <li class="menu__list"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="menu__list"><a class="menu__link" href="">Контакты</a></li>
+                        </ul>
+            
+                    </nav>
+                </div>
+                <div class="contact">
+                    <ul class="contact__block">
+                        <li class="contact__item">
+                            <a class="contact__link" href="mailto:info@devstudio.com">
+                                <svg class="contact__icon" width="16" height="12">
+                                    <use href="./images/sprite.svg#icon-email">
+                                    </use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="contact__link" href="tel:+380961111111">
+                                <svg class="contact__icon" width="10" height="16">
+                                    <use href="./images/sprite.svg#icon-smartphone-new">
+                                    </use>
+                                </svg>+380961111111</a>
+                        </li>
                     </ul>
-        
-                </nav>
-                <ul class="contact">
-                    <li class="contact__item">
-                        <a class="contact__link" href="mailto:info@devstudio.com">
-                            <svg class="contact__icon" width="16" height="12">
-                                <use href="./images/sprite.svg#icon-email">
-                                </use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="contact__item">
-                        <a class="contact__link" href="tel:+380961111111">
-                            <svg class="contact__icon" width="10" height="16">
-                                <use href="./images/sprite.svg#icon-smartphone-new">
-                                </use>
-                            </svg>+380961111111</a>
-                    </li>
-                </ul>
+                </div>
                 
                     <ul class="menu__social">
                         <li class="menu__social-list">
@@ -166,12 +170,21 @@
             </div>
         </section>
 
-        <!-- <section class="section command-item">
+        <section class="section command-item">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="command">
                     <li class="command__list">
-                        <img class="command__photo" src="./images/teamcard1.jpg" alt="designer" width="270" height="260">
+                        <img class="command__photo" 
+                        srcset="./images/igorimg1x.jpg 320w,
+                        ./images/igorimg1-5x.jpg 480w,
+                        ./images/igorimg2x.jpg 640w,
+                        ./images/igorimg3x.jpg 960w, 
+                        ./images/igorimg4x.jpg 1280w"
+                        src="./images/igorimg1x.jpg"
+                         alt="designer"
+                         sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw "
+                       >
                         <div class="team">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__work">Product Designer</p>
@@ -209,7 +222,16 @@
 
                     </li>
                     <li class="command__list">
-                        <img class="command__photo" src="./images/teamcard2.jpg" alt="front end" width="270" height="260">
+                        <img class="command__photo" 
+                        srcset="./images/repina1x.jpg 320w,
+                        ./images/repina1-5x.jpg 480w,
+                        ./images/repina2x.jpg 640w,
+                        ./images/repina3x.jpg 960w, 
+                        ./images/repina4x.jpg 1280w"
+                        src="./images/repina1x.jpg"
+                         alt="front-end"
+                         sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw "
+                       >
                         <div class="team">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__work">Frontend Developer</p>
@@ -246,7 +268,16 @@
                         </div>
                     </li>
                     <li class="command__list">
-                        <img class="command__photo" src="./images/teamcard3.jpg" alt="marketing" width="270" height="260">
+                        <img class="command__photo" 
+                        srcset="./images/repina1x.jpg 320w,
+                        ./images/repina1-5x.jpg 480w,
+                        ./images/repina2x.jpg 640w,
+                        ./images/repina3x.jpg 960w, 
+                        ./images/repina4x.jpg 1280w"
+                        src="./images/tarasov1x.jpg"
+                         alt="front-end"
+                         sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw "
+                       >
                         <div class="team">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__work">Marketing</p>
@@ -283,7 +314,16 @@
                         </div>
                     </li>
                     <li class="command__list">
-                        <img class="command__photo" src="./images/teamcard4.jpg" alt="designer" width="270" height="260">
+                        <img class="command__photo" 
+                        srcset="./images/yermakov1x.jpg 320w,
+                        ./images/yermakov1-5x.jpg 480w,
+                        ./images/yermakov2x.jpg 640w,
+                        ./images/yermakov3x.jpg 960w, 
+                        ./images/yermakov4x.jpg 1280w"
+                        src="./images/yermakov1x.jpg"
+                         alt="front-end"
+                         sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw "
+                       >
                         <div class="team">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__work">UI Designer</p>
@@ -321,7 +361,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <section class="section">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>

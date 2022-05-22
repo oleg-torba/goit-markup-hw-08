@@ -101,6 +101,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 60px;
   border-bottom: 1px solid var(--header-border-color);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -111,6 +112,7 @@ body {
 @media screen and (min-width: 768px) {
   .header {
     position: static;
+    height: 80px;
   }
 }
 

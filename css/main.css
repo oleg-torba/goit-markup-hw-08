@@ -1758,6 +1758,12 @@ body {
      object-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-image__photo {
+    width: 370px;
+  }
+}
+
 .portfolio-image__list {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;

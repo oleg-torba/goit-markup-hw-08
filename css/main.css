@@ -91,7 +91,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200;
+    width: 1200px;
   }
 }
 
@@ -187,7 +187,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     width: auto;
-    margin-left: 200px;
+    margin-left: 300px;
   }
 }
 
@@ -514,17 +514,6 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero {
-    background: url(./..images/hero@1-5.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(47, 48, 58, 0.4);
-    background-blend-mode: overlay;
-    text-align: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     background: url(./../images/heroimg@2x.jpg);
@@ -556,6 +545,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1756,12 +1747,6 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-image__photo {
-    width: 370px;
-  }
 }
 
 .portfolio-image__list {

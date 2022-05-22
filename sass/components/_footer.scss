@@ -1,8 +1,9 @@
 .footer {
     
-    // max-width: 1600px;
+    max-width: 1600px;
     width: 100%;
     padding: 60px 0;
+    box-sizing: border-box;
     background-color: var(--footer-bgc);
     
     @media screen and (min-width:1200px) {

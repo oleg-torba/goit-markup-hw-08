@@ -1286,6 +1286,12 @@ body {
           align-items: flex-start;
 }
 
+@media screen and (min-width: 1200px) {
+  .adress {
+    text-align: left;
+  }
+}
+
 .adress__maplink {
   display: block;
   color: var(--adress-hero-color);

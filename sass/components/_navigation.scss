@@ -3,7 +3,8 @@
     
     @media screen and (min-width:768px) {
         display: flex;
-    align-items: center;
+    // align-items: center;
+   
     // justify-content: center;
     }
 	
@@ -12,6 +13,7 @@
 .menu {
     @media screen and (min-width:768px) {
         display: flex;
+        
     }
 }
 
@@ -132,7 +134,13 @@
     @media screen and (max-width:767px) {
         flex-grow: 1;
     }
+    @media screen and (min-width:768px){
+        
+        display: flex;
+    align-items: center;
 }
+    }
+
 
 
 // .mobile-menu__nav-list {
@@ -274,15 +282,15 @@
         }
        
         & .mobile-menu__icon-close {
+          display: none;
+        }
+      
+        &.is-open .mobile-menu__icon-close {
           display: block;
         }
       
-        & .is-open .mobile-menu__icon-close {
-          display: none;
-        }
-      
-        & .is-open .mobile-menu__icon {
-          display: none;
+        &.is-open .mobile-menu__icon {
+            display: none;
         }
 
     @media screen and (min-width: 768px){

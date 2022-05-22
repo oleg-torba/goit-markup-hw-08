@@ -1,5 +1,5 @@
 .logo {
-    display: inline-block;
+    display: block;
     padding: 24px 0 25px 0;
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -11,6 +11,7 @@
 
     @media screen and (min-width:768px) {
         margin-right: 83px;
+        
         
     }
     @media screen and (min-width:1200px) {

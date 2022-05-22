@@ -1,26 +1,28 @@
 .feature {
 
-    display: none;
-    padding-top: 0px;
-    // display: flex;
-    align-items: center;
-    justify-content: space-between;
+   @media screen and (max-width:1199px) {
+       display: none;
+   }
+    
     
 }
 
 
 .feature-images {
     
-     display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    list-style: none;
 }
 
 
 .feature-images__list {
     position: relative;
     margin-right: 30px;
-    width: 370px;
+   
 
     &:last-child {
         margin-right: 0;

@@ -8,12 +8,15 @@
 
     
 	@media screen and (min-width:768px) and (max-width:1199px){
-		
+		// position: absolute;
 		display: flex;
         flex-direction: column;
-    flex-wrap: wrap;
-    width: min-content;
-    align-items: baseline;
+        flex-wrap: wrap;
+  
+        align-items: baseline;
+        margin-left: 84px;
+  
+    
         
         
         
@@ -24,7 +27,8 @@
         flex-wrap: nowrap;
         flex-direction: row;
         width: auto;
-        margin-left: auto;
+        margin-left: 200px;
+        
 	}
     
 }

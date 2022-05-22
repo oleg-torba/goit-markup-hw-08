@@ -106,7 +106,9 @@
                             <div class="overlay">
                                 <img class="portfolio-image__photo" 
                                 srcset="
-                                ./images/techno1x.jpg 450w
+                                ./images/techno1x.jpg 480w,
+                                ./images/techno2x.jpg 768w,
+                                ./images/techno3x.jpg 1200w
                                 "
                                 src="./images/techno1x.jpg"
                                 alt="Технокряк"
@@ -129,7 +131,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/orlean1x.jpg 450w
+                            ./images/orlean1x.jpg 480w,
+                            ./images/orlean2x.jpg 768w,
+                            ./images/orlean3x.jpg 1200w
                             "
                             src="./images/orlean1x.jpg"
                             alt="Орлеан"
@@ -145,7 +149,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/seafood1x.jpg 450w
+                            ./images/seafood1x.jpg 480w,
+                            ./images/seafood2x.jpg 768w,
+                            ./images/seafood3x.jpg 1200w
                             "
                             src="./images/seafood1x.jpg"
                             alt="Ресторан"
@@ -160,7 +166,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/prime1x.jpg 450w
+                            ./images/prime1x.jpg 480w,
+                            ./images/prime2x.jpg 768w,
+                            ./images/prime3x.jpg 1200w
                             "
                             src="./images/prime1x.jpg"
                             alt="прайм"
@@ -175,7 +183,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/boxes1x.jpg 450w
+                            ./images/boxes1x.jpg 480w,
+                            ./images/boxes2x.jpg 768w,
+                            ./images/boxes3x.jpg 1200w
                             "
                             src="./images/boxes1x.jpg"
                             alt="Бокс"
@@ -190,7 +200,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/inspiration1x.jpg 450w
+                            ./images/inspiration1x.jpg 480w,
+                            ./images/inspiration2x.jpg 768w,
+                            ./images/inspiration3x.jpg 1200w
                             "
                             src="./images/inspiration1x.jpg"
                             alt="inspiration"
@@ -205,7 +217,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/limited1x.jpg 450w
+                            ./images/limited1x.jpg 480w,
+                            ./images/limited2x.jpg 768w,
+                            ./images/limited3x.jpg 1200w
                             "
                             src="./images/limited1x.jpg"
                             alt="limited"
@@ -220,7 +234,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/lab1x.jpg 450w
+                            ./images/lab1x.jpg 480w,
+                            ./images/lab2x.jpg 768w,
+                            ./images/lab3x.jpg 1200w
                             "
                             src="./images/lab1x.jpg"
                             alt="limited"
@@ -235,7 +251,9 @@
                         <a href="#" class="portfolio-image__link">
                             <img class="portfolio-image__photo" 
                             srcset="
-                            ./images/grow1x.jpg 450w
+                            ./images/grow1x.jpg 480w,
+                            ./images/grow2x.jpg 768w,
+                            ./images/grow3x.jpg 1200w
                             "
                             src="./images/grow1x.jpg"
                             alt="grow"
@@ -250,8 +268,8 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container footer-position">
+    <footer class="footer container">
+        <div class="footer-position">
             <div class="footer-adress">
                 <a class="footer-adress__logo" href="index.html"><span class="logo__web">Web</span><span
                     class="logo__foot">Studio</span></a>
@@ -304,11 +322,16 @@
                     </li>
                 </ul>
             </div>
+            
+                
             <div class="footer-form">
-                <h3 class="footer-form__title">Подпишитесь на рассылку</h3>
+                
                 <form class="form">
                     <div class="form__item">
-                        <label for="mail"></label>
+                        <label class="footer-form__title" for="mail">
+                            Подпишитесь на рассылку
+                        </label>
+                        
                         <input type="email" name="mail" id="mail" placeholder="E-mail">
                     </div>
                     <div class="form__item">
@@ -320,6 +343,7 @@
                     </div>
                 </form>
             </div>
+            
         </div>
     </footer>
     <script src="./js/menu.js"></script>

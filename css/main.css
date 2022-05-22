@@ -47,6 +47,16 @@ body {
   font-family: var(--general-font), var(--secondary-font);
 }
 
+.body--scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.body--scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

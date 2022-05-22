@@ -24,3 +24,13 @@ body {
     color: var(--main-color);
     font-family: var(--general-font), var(--secondary-font);
 }
+
+.body--scroll-hidden {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-y: hidden;
+}
+
+.body--scroll-hidden::-webkit-scrollbar {
+	display: none;
+}

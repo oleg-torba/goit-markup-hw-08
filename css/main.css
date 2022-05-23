@@ -1767,6 +1767,9 @@ body {
         -ms-flex: calc(50% - 30px);
             flex: calc(50% - 30px);
   }
+  .portfolio-image__list:last-child a {
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1813,6 +1816,12 @@ body {
   border: 1px solid var(--image-border-color);
   border-top: 0;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product {
+    padding: 20px 0px 20px 24px;
+  }
 }
 
 .product__name {

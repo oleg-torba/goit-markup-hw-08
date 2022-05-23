@@ -26,35 +26,9 @@
     object-fit: cover;
     
     object-position: center;
-    // @media screen and (min-width:1200px) {
-    //     width: 370px;
-    // }
-    // @media screen and (min-width:768px) and (max-width:1199px) {
-    //     min-width: 320px;
-    //     max-width: 100%;
-    // }
-    // @media screen and (min-width:768px) and (max-width:1199px) {
-    //     width: 100%;
-    // }
-    // @media screen and (min-width:1200px) {
-    //         min-width: 370px;}
-    
+
+}
    
-
-//    @media screen and (max-width:767px) {
-//        max-width: 450px;
-//    }
-//    @media screen and (min-width:768px) {
-//     width: 354px;
-//     height: 294px;
-    
-// }
-
-// @media screen and (min-width:1200px) {
-//     width: 370px;
-//     height: 294px;
-// }
-   }
 .portfolio-image__list {
 
     
@@ -67,6 +41,12 @@
         @media screen and (min-width:768px) and (max-width:1199px) {
            
             flex: calc(50% - 30px);
+         
+               
+            
+                &:last-child a {
+                    width: 354px;}
+           
             
             
         }
@@ -103,9 +83,14 @@
     &:focus .overlay__title {
         transform: translateY(0);
     }
+
+   
 }
 
 .product {
+    @media screen and (min-width:768px) and (max-width:1199px){
+        padding: 20px 0px 20px 24px
+    }
     padding: 20px 24px;
     border: 1px solid var(--image-border-color);
     border-top: 0;

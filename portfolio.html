@@ -106,15 +106,36 @@
                     <li class="portfolio-image__list">
                         <a href="#" class="portfolio-image__link">
                             <div class="overlay">
-                                <img class="portfolio-image__photo" 
-                                srcset="
-                                ./images/techno1x.jpg 480w,
-                                ./images/techno2x.jpg 768w,
-                                ./images/techno3x.jpg 1200w
-                                "
-                                src="./images/techno1x.jpg"
-                                alt="Технокряк"
-                            >
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/technodesk1x.jpg 1x,
+                                            ./images/technodesk2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/technotablet1x.jpg 1x,
+                                            ./images/technotablet2x.jpg 2x
+                                        "
+                                        media="(max-width: 1199px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/techno1x.jpg 1x,
+                                            ./images/technomobile2x.jpg 2x
+                                        "
+                                        media="(max-width: 767px)"
+                                    />
+                                    
+                                    
+                                    <img
+                                        class="portfolio-image__photo"
+                                        src="./images/technodesk1x.jpg"
+                                        alt="Технокряк"
+                                    />
+                                </picture>
                        
                        
                                 <p class="overlay__title">
@@ -131,15 +152,36 @@
                         </li>
                     <li class="portfolio-image__list">
                         <a href="#" class="portfolio-image__link">
-                            <img class="portfolio-image__photo" 
-                            srcset="
-                            ./images/orlean1x.jpg 480w,
-                            ./images/orlean2x.jpg 768w,
-                            ./images/orlean3x.jpg 1200w
-                            "
-                            src="./images/orlean1x.jpg"
-                            alt="Орлеан"
-                        >
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/orleandesk1x.jpg 1x,
+                                        ./images/orleandesk2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/orleantablet1x.jpg 1x,
+                                        ./images/orleantablet2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/orlean1x.jpg 1x,
+                                        ./images/orleanmobile2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                
+                                
+                                <img
+                                    class="portfolio-image__photo"
+                                    src="./images/orleandesk1x.jpg"
+                                    alt="Орлеан"
+                                />
+                            </picture>
 
                             <div class="product">
                                 <h2 class="product__name">Постер New Orlean vs Golden Star</h2>
@@ -149,15 +191,36 @@
                     </li>
                     <li class="portfolio-image__list">
                         <a href="#" class="portfolio-image__link">
-                            <img class="portfolio-image__photo" 
-                            srcset="
-                            ./images/seafood1x.jpg 480w,
-                            ./images/seafood2x.jpg 768w,
-                            ./images/seafood3x.jpg 1200w
-                            "
-                            src="./images/seafood1x.jpg"
-                            alt="Ресторан"
-                        >
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/seafooddesk1x.jpg 1x,
+                                        ./images/seafooddesk2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/seafoodtablet1x.jpg 1x,
+                                        ./images/seafoodtablet2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/seafood1x.jpg 1x,
+                                        ./images/seafoodmobile2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                
+                                
+                                <img
+                                    class="portfolio-image__photo"
+                                    src="./images/seafooddesk1x.jpg"
+                                    alt="Seafood"
+                                />
+                            </picture>
                             <div class="product">
                                 <h2 class="product__name">Ресторан Seafood</h2>
                                 <p class="product__link">Приложение</p>
@@ -166,15 +229,36 @@
                     </li>
                     <li class="portfolio-image__list">
                         <a href="#" class="portfolio-image__link">
-                            <img class="portfolio-image__photo" 
-                            srcset="
-                            ./images/prime1x.jpg 480w,
-                            ./images/prime2x.jpg 768w,
-                            ./images/prime3x.jpg 1200w
-                            "
-                            src="./images/prime1x.jpg"
-                            alt="прайм"
-                        >
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/primedesk1x.jpg 1x,
+                                        ./images/primedesk2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/primetablet1x.jpg 1x,
+                                        ./images/primetablet2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/prime1x.jpg 1x,
+                                        ./images/primemobile2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                
+                                
+                                <img
+                                    class="portfolio-image__photo"
+                                    src="./images/sprimedesk1x.jpg"
+                                    alt="Prime"
+                                />
+                            </picture>
                             <div class="product">
                                 <h2 class="product__name">Проект Prime</h2>
                                 <p class="product__link">Маркетинг</p>

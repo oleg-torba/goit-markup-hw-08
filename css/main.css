@@ -467,7 +467,7 @@ body {
   }
 }
 
-.menu__social-list {
+.mobile-menu__social-list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
@@ -480,18 +480,19 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--hover-color);
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.menu__social-list:first-child {
+.mobile-menu__social-list:first-child {
   margin-left: 0;
 }
 
-.menu__social-list:last-child {
+.mobile-menu__social-list:last-child {
   border-right: none;
 }
 
-.menu__social-link {
+.mobile-menu__social-link {
   display: block;
   color: var(--hover-color);
   text-decoration: none;

@@ -267,15 +267,36 @@
                     </li>
                     <li class="portfolio-image__list">
                         <a href="#" class="portfolio-image__link">
-                            <img class="portfolio-image__photo" 
-                            srcset="
-                            ./images/boxes1x.jpg 480w,
-                            ./images/boxes2x.jpg 768w,
-                            ./images/boxes3x.jpg 1200w
-                            "
-                            src="./images/boxes1x.jpg"
-                            alt="Бокс"
-                        >
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/boxesdesk1x.jpg 1x,
+                                        ./images/boxesdesk2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/boxestablet1x.jpg 1x,
+                                        ./images/boxestablet2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/boxes1x.jpg 1x,
+                                        ./images/boxesmobile2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                
+                                
+                                <img
+                                    class="portfolio-image__photo"
+                                    src="./images/boxesdesk1x.jpg"
+                                    alt="Boxes"
+                                />
+                            </picture>
                             <div class="product">
                                 <h2 class="product__name">Проект Boxes</h2>
                                 <p class="product__link">Приложение</p>
@@ -284,15 +305,36 @@
                     </li>
                     <li class="portfolio-image__list">
                         <a href="#" class="portfolio-image__link">
-                            <img class="portfolio-image__photo" 
-                            srcset="
-                            ./images/inspiration1x.jpg 480w,
-                            ./images/inspiration2x.jpg 768w,
-                            ./images/inspiration3x.jpg 1200w
-                            "
-                            src="./images/inspiration1x.jpg"
-                            alt="inspiration"
-                        >
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/inspirationedesk1x.jpg 1x,
+                                        ./images/inspirationedesk2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/inspirationtablet1x.jpg 1x,
+                                        ./images/inspirationtablet2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/boxes1x.jpg 1x,
+                                        ./images/inspirationmobile2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                
+                                
+                                <img
+                                    class="portfolio-image__photo"
+                                    src="./images/inspirationedesk1x.jpg"
+                                    alt="Boxes"
+                                />
+                            </picture>
                             <div class="product">
                                 <h2 class="product__name">Inspiration has no Borders</h2>
                                 <p class="product__link">Веб-сайт</p>
@@ -300,16 +342,35 @@
                         </a>
                     </li>
                     <li class="portfolio-image__list">
-                        <a href="#" class="portfolio-image__link">
-                            <img class="portfolio-image__photo" 
-                            srcset="
-                            ./images/limited1x.jpg 480w,
-                            ./images/limited2x.jpg 768w,
-                            ./images/limited3x.jpg 1200w
-                            "
-                            src="./images/limited1x.jpg"
-                            alt="limited"
-                        >
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/limiteddesk1x.jpg 1x,
+                                    ./images/limiteddesk1x2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/limitedtablet1x.jpg 1x,
+                                    ./images/limitedtablet2x.jpg 2x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/limited1x.jpg 1x,
+                                    ./images/limitedmobile2x.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            />
+                            
+                            
+                            <img
+                                class="portfolio-image__photo"
+                                src="./images/limited.jpg"
+                                alt="limited"
+                            />
                             <div class="product">
                                 <h2 class="product__name">Издание Limited Edition</h2>
                                 <p class="product__link">Дизайн</p>

@@ -1,16 +1,24 @@
 .checkbox {
     
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
+   
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+
+//     @media screen and (min-width:768px) {
+//         display: flex;
+//     }
+// }
 }
 
-
+.checkbox__label {
+    align-items: center;
+    justify-content: center;
+}
 .checkbox__input {
     position: absolute;
     width: 1px;

@@ -307,6 +307,10 @@ body {
   }
 }
 
+.flex-nav {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .flex-nav {
     display: -webkit-box;
@@ -601,6 +605,14 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
@@ -660,8 +672,7 @@ body {
   padding: 40px;
   top: 50%;
   left: 50%;
-  min-width: 320px;
-  max-width: 528px;
+  max-width: 450px;
   min-height: 320px;
   max-height: 609px;
   -webkit-transform: translate(-50%, -50%);
@@ -671,6 +682,12 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .modal-submit {
@@ -868,17 +885,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.checkbox__label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
 }
 
 .checkbox__input {
@@ -1338,6 +1358,14 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-adress {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
 .adress {
   font-style: normal;
   font-size: 14px;
@@ -1451,6 +1479,7 @@ body {
 @media screen and (min-width: 1200px) {
   .form__item {
     margin-right: 12px;
+    text-align: left;
   }
   .form__item:last-child {
     margin-right: 0;
@@ -1458,13 +1487,10 @@ body {
 }
 
 .form__item input[type=email] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  min-width: 320px;
+  width: 100%;
   color: rgba(255, 255, 255, 0.6);
   height: 50px;
   padding: 15px 16px;
@@ -1539,6 +1565,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1559,6 +1590,15 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer-adress__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -1573,6 +1613,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-adress__logo {
     font-size: 26px;
+    text-align: left;
   }
 }
 
@@ -1595,6 +1636,14 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-position {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    text-align: left;
   }
 }
 

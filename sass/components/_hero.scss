@@ -1,47 +1,4 @@
-// .hero {
-    
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	padding-top: 118px;
-// 	padding: 118px 60px;
-// 	max-width: 1600px;
-// 	background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(./images/heroimg@2x.jpg);
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// 	background-position: center;
-// 	background-color: rgba(47, 48, 58, 0.4);
-// 	background-blend-mode: overlay;
-// 	text-align: center;
 
-
-//     // @media screen and (min-width:480px) and (max-width:767px) {
-        
-     
-// 	// 	background: url(./..images/hero@1-5.jpg);
-// 	// 	background-size: cover;
-// 	// 	background-position: center;
-// 	// 	background-color: rgba(47, 48, 58, 0.4);
-// 	// 	background-blend-mode: overlay;
-// 	// 	text-align: center;
-// 	// }
-
-//     @media screen and (min-width:768px) {
-//         background: url(./../images/heroimg@2x.jpg);
-//     }
-// 	@media screen and (min-width:1200px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-//         background: url(./../images/heroimg@3x.jpg);
-//         padding: 200px 0;
-//         background-size: cover;
-// 		background-position: center;
-// 		background-color: rgba(47, 48, 58, 0.4);
-// 		background-blend-mode: overlay;
-// 		text-align: center;
-//     }
-
-	
-
-
-// }
 
 .hero {
     background-image: linear-gradient(
@@ -76,7 +33,7 @@
         rgba(47, 48, 58, 0.4)), 
         url(../images/herotablet1x.jpg);
       
-        max-width: 1199px;  
+         
   
         @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -97,7 +54,7 @@
             rgba(47, 48, 58, 0.4)), 
         url(../images/herodesk1x.jpg);
       
-        max-width: 1600px;  
+          
   
           @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -172,67 +129,3 @@
 }
 
 
-//   .hero__title {
-//     margin-bottom: 30px;
-  
-//     font-weight: 900;
-//     font-size: 26px;
-//     line-height: 1.62;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: var(--second-page-color);
-//   }
-
-//   .hero__action-btn {
-//     padding: 10px 32px;
-//   }
-
-//   @media screen and (min-width:768px) {
-    
-//       background-image:
-//       linear-gradient(
-//       var(--overlay-color),
-//       var(--overlay-color)), 
-//       url(./images/hero-tab-img.jpg);
-    
-//       max-width: 1199px;  
-
-//       @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//       background-image:
-//       linear-gradient(
-//       var(--overlay-color),
-//       var(--overlay-color)), 
-//       url(../images/hero-tab-img@2x.jpg);
-//         }
-//     }
-  
-
-//   @media screen and (min-width:1200px) {
-    
-//       background-image:
-//       linear-gradient(
-//       var(--overlay-color),
-//       var(--overlay-color)), 
-//       url(../images/hero-desk-img.jpg);
-    
-//       max-width: 1600px;  
-
-//         @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-   
-//         background-image:
-//         linear-gradient(
-//         var(--overlay-color),
-//         var(--overlay-color)),
-//         url(../images/hero-desk-img@2x.jpg);
-//           }
-        
-//       }
-//       .hero__title {
-//         font-size: 44px;
-//         line-height: 1.36;
-//       }
-    

@@ -1,6 +1,6 @@
 .logo {
     display: block;
-    // padding: 24px 0 25px 0;
+    padding: 16px 0;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 24px;
@@ -10,6 +10,7 @@
     text-align: left;
 
     @media screen and (min-width:768px) {
+        padding: 0;
         margin-right: 83px;
         text-align: center;
         

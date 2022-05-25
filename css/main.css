@@ -110,6 +110,7 @@ body {
 
 .logo {
   display: block;
+  padding: 16px 0;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 24px;
@@ -121,6 +122,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .logo {
+    padding: 0;
     margin-right: 83px;
     text-align: center;
   }
@@ -276,6 +278,16 @@ body {
     font-size: 14px;
     line-height: 1.14;
     padding: 32px 0;
+  }
+}
+
+.phone {
+  color: var(--hover-color);
+}
+
+@media screen and (min-width: 768px) {
+  .phone {
+    color: var(--secondary-color);
   }
 }
 
@@ -567,7 +579,6 @@ body {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herotablet1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotablet1x.jpg);
-    max-width: 1199px;
   }
 }
 
@@ -583,7 +594,6 @@ body {
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herodesk1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herodesk1x.jpg);
-    max-width: 1600px;
   }
 }
 
@@ -1274,17 +1284,19 @@ body {
 }
 
 .client__item {
-  -webkit-box-flex: calc(50% - 30px);
-      -ms-flex: calc(50% - 30px);
-          flex: calc(50% - 30px);
   list-style-type: none;
+}
+
+@media screen and (max-width: 767px) {
+  .client__item {
+    -webkit-box-flex: calc(50% - 30px);
+        -ms-flex: calc(50% - 30px);
+            flex: calc(50% - 30px);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__item {
-    -webkit-box-flex: 33%;
-        -ms-flex: 33%;
-            flex: 33%;
     -webkit-box-flex: calc(33% - 30px);
         -ms-flex: calc(33% - 30px);
             flex: calc(33% - 30px);
@@ -1293,7 +1305,11 @@ body {
 
 @media screen and (min-width: 1200px) {
   .client__item {
+    margin-right: 30px;
     list-style-type: none;
+  }
+  .client__item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -1351,17 +1367,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .footer-adress {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
   }
 }
 
@@ -1409,7 +1414,7 @@ body {
     margin-bottom: 9px;
   }
   .adress__link:last-child {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -1439,6 +1444,12 @@ body {
 
 .adress__nav {
   list-style-type: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .adress__nav {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-form__title {
@@ -1636,6 +1647,8 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1649,18 +1662,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .social-link-footer {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .social-link-footer {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
   }
 }
 
@@ -1756,12 +1758,16 @@ body {
 }
 
 .footer {
-  max-width: 1600px;
-  width: 100%;
   padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: var(--footer-bgc);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1787,7 +1793,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1795,7 +1801,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -2041,11 +2047,17 @@ body {
 }
 
 .title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

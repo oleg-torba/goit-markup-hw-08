@@ -73,6 +73,8 @@
             
             font-size: 34px;
             }
+
+           
            
     }
          
@@ -110,12 +112,7 @@
         color: var(--hover-color);
     fill: var(--hover-color);
     }
-    // &:first-child {
-    //     color: var(--secondary-color);
-    // }
-    // &:last-child {
-    //     color: var(--hover-color);
-    // }
+    
    
 
     @media screen and (min-width:768px) {
@@ -134,6 +131,12 @@
 
 }
 
+.phone {
+    color: var(--hover-color);
+    @media screen and (min-width:768px) {
+        color: var(--secondary-color);
+    }
+}
 .contact__icon {
     margin-right: 10px;
     @media screen and (max-width:767px) {

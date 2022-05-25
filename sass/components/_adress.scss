@@ -8,15 +8,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex: 50%;
+       
         
         
     }
-    @media screen and (min-width:480px) and (max-width:1199px) {
-       justify-content: left;
-        
-        
-    }
+    
 
 
     
@@ -57,9 +53,10 @@
     
     @media screen and (max-width:1199px) {
         margin-bottom: 9px;
-        &:last-child{
-            margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
         }
+      
 
     @media screen and (min-width:1200px) {
         margin-bottom: 6px;
@@ -91,4 +88,7 @@
 }
 .adress__nav {
     list-style-type: none;
+   @media screen and (max-width:1199px){
+    margin-bottom: 60px;
+   }
 } 

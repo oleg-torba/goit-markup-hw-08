@@ -1789,10 +1789,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {

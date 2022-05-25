@@ -1,8 +1,10 @@
 .portfolio-buttons {
     display: flex;
+   @media screen and (max-width:767px) {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 40px;
+   }
     
     
     @media screen and (min-width:768px) {
@@ -14,8 +16,7 @@
 
 .portfolio-buttons__list {
 
-    // margin-right: 6px;
-    // margin-bottom: 15px;
+    
     list-style-type: none;
    
     @media screen and (min-width:1200px){
